@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="src/todo.js" ></script>
+<script type="text/javascript" src="src/cache.js" ></script>
+<script type="text/javascript" src="src/service.js" ></script>
+
+<script type="text/javascript">
+
+async function onloadFunction() {
+    let data = null;
+    data = readCache();
+    if (!data) {
+        data = await request();
+        saveCache(data);
+    }
+    const mainElement = document.getElementById("main");
+
+    if (Array.isArray(data)) {
+        data.forEach((object) => {
+            const domElement = makeDomElement(object);
+            mainElement.append(domElement);
+        });
+    }
+}
+</script>
+</head>
+<body onload="onloadFunction()">
+<h2>Список todo</h2>
+<div id="main" />
+</body>
+</html>

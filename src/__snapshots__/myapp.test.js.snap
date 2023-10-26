@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тесты веб приложения создание DOM элемента 1`] = `<div />`;
+
+exports[`Тесты нашего приложения создание DOM элемента 1`] = `<div />`;
