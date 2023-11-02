@@ -1,6 +1,6 @@
 # Node.js template
 
-This is a Node.js project with an HTTP server.
+Проект на node.js с использованием JEST
 
 Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) to optimize it for [CodeSandbox](https://codesandbox.io).
 
